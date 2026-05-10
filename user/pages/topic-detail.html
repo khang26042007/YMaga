@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga - Chi tiết Chủ Đề</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--g-main:linear-gradient(90deg,#E98B4B 0%,#C55849 100%);--dk:#10100E;--gy:#A7A7A7;--bg:#FFF;--bd:#E4E4E4;--tag-bg:#FFF2EC;--star:#F59E0B}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:#F5F5F5;color:var(--dk);overflow-x:hidden}a{text-decoration:none;color:inherit;transition:.2s}a:hover{opacity:.8}.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px;color:var(--dk)}.logo-mark{position:relative;width:30px;height:30px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:6px;height:30px;top:0}.r1{left:24px}.r2{left:0}.r3{width:6px;height:15px;left:12px;top:0}.r4,.r5{width:12px;height:9px;top:21px}.r4{left:0}.r5{left:18px}header{background:var(--bg);display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}.h-l{display:flex;align-items:center;gap:40px}nav{display:flex;gap:24px;font-weight:700;font-size:14px;text-transform:uppercase}nav a.act{color:var(--p)}.src{background:#F2F2F2;border-radius:8px;padding:10px 16px;display:flex;align-items:center;gap:8px;width:320px}.src input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.auth-btns{display:flex;gap:16px;align-items:center}.b-log{font-weight:600;font-size:14px}.b-reg{padding:8px 16px;background:#F2F2F2;border-radius:8px;font-weight:600;font-size:14px}.u-pro{display:none;align-items:center;gap:8px;cursor:pointer;background:#F2F2F2;padding:4px 12px 4px 4px;border-radius:50px}.avt{width:32px;height:32px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF;font-weight:700}.uname{font-weight:600;font-size:14px}.u-menu{display:none;position:absolute;top:115%;right:0;background:#FFF;border:1px solid var(--bd);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.1);flex-direction:column;min-width:230px;overflow:hidden;z-index:200}.u-menu.show{display:flex}.u-menu a{padding:14px 16px;font-size:14px;font-weight:600;border-bottom:1px solid #F2F2F2}footer{background:linear-gradient(90deg,#D45B42 0%,#E8904D 100%);color:#FFF;padding:60px 5vw 40px;display:flex;flex-direction:column;margin-top:60px}.f-cnt{display:flex;justify-content:space-between;align-items:flex-start}.f-l{max-width:450px}.f-l p{font-size:14px;line-height:1.8;opacity:.9;margin-top:16px}.f-r h4{font-size:16px;margin-bottom:16px;font-weight:700;text-transform:uppercase}.f-r p{font-size:14px;opacity:.9;margin-bottom:12px}.f-ln{width:100%;height:1px;background:rgba(255,255,255,.2);margin-top:50px}.hero-img-bg{width:100%;height:250px;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center}.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.4)}.hero-img-bg h1{position:relative;z-index:2;color:#FFF;font-size:42px;font-weight:700;text-transform:uppercase;letter-spacing:1px;text-shadow:0 2px 10px rgba(0,0,0,0.5)}main{max-width:1200px;margin:40px auto;padding:0 20px}.t-lay{display:grid;grid-template-columns:2.2fr 1fr;gap:40px}.feat-post{background:#FFF;border:1px solid var(--bd);border-radius:8px;overflow:hidden;margin-bottom:24px}.feat-post img{width:100%;height:400px;object-fit:cover}.feat-post .p-in{padding:20px}.feat-post h2{font-size:24px;font-weight:700;margin:12px 0;line-height:1.4}.post-list{display:flex;flex-direction:column;gap:16px}.l-crd{display:flex;background:#FFF;border:1px solid var(--bd);border-radius:8px;overflow:hidden;height:160px}.l-crd img{width:260px;height:100%;object-fit:cover}.l-crd .p-in{padding:16px 20px;flex:1;display:flex;flex-direction:column;justify-content:center}.l-crd h3{font-size:18px;font-weight:700;line-height:1.4;margin:8px 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tag{background:var(--tag-bg);color:var(--p);padding:4px 12px;border-radius:50px;font-size:11px;font-weight:600;display:inline-block}.act-btns{display:flex;gap:16px;color:var(--gy);align-items:center}.act-btn{cursor:pointer;transition:.2s;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600}.act-btn.active{color:var(--p)}.act-btn.active svg{fill:currentColor;stroke:var(--p)}.t-info-box{background:#FFF;border:1px solid var(--bd);border-radius:8px;padding:24px;margin-bottom:24px}.t-info-box .sm-tag{font-size:12px;color:var(--p);font-weight:700;text-transform:uppercase;display:block;margin-bottom:4px}.t-info-box h3{font-size:24px;font-weight:700;text-transform:uppercase;margin-bottom:20px;color:var(--dk)}.t-info-box h4{font-size:14px;font-weight:700;margin-bottom:8px;color:var(--dk)}.t-info-box p{font-size:13px;color:var(--dk);line-height:1.6;margin-bottom:16px}.t-info-box ul{font-size:13px;color:var(--dk);line-height:1.6;padding-left:16px;margin-bottom:16px}.t-info-box li{margin-bottom:6px}.btn-fav-topic-main{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;color:var(--dk);cursor:pointer;transition:.2s}.btn-fav-topic-main:hover{color:var(--p)}.btn-fav-topic-main.active{color:var(--p)}.btn-fav-topic-main.active svg{fill:currentColor;stroke:var(--p)}.fav-sb{background:var(--bg);border-radius:8px;padding:24px;border:1px solid var(--bd);position:sticky;top:90px}.fav-tit{font-size:18px;font-weight:700;color:var(--p);margin-bottom:16px}.fav-line{width:100%;border-top:1px dashed var(--bd);margin-bottom:16px}.star-selector{display:flex;gap:4px;cursor:pointer}.star-selector svg{fill:none;stroke:var(--gy);transition:.2s}.star-selector svg.hovered,.star-selector svg.selected{fill:var(--star);stroke:var(--star)}.auth-prompt{background:#FFF9F5;border:1px dashed var(--p);border-radius:8px;padding:24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}.auth-prompt p{font-size:14px;color:var(--dk);line-height:1.5}.auth-prompt a{display:inline-block;padding:10px 20px;background:var(--p);color:#FFF;font-weight:600;border-radius:6px;font-size:14px}.pg-wrap{display:flex;justify-content:center;gap:6px;margin-top:16px;flex-wrap:wrap}.pg-btn{padding:4px 10px;border:1px solid var(--bd);background:#FFF;border-radius:4px;font-size:12px;font-weight:600;cursor:pointer;color:var(--gy)}.pg-btn.act{background:var(--p);color:#FFF;border-color:var(--p)}</style>
+</head>
+<body>
+    <header>
+        <div class="h-l">
+            <a href="../../index.html" class="logo">
+                <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+                <span>YMaga</span>
+            </a>
+            <nav>
+                <a href="home.html">TRANG CHỦ</a>
+                <a href="topic.html" class="act">CHỦ ĐỀ</a>
+            </nav>
+            <div class="src">
+                <span>🔍</span>
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+        <div id="guest-ui" class="auth-btns">
+            <a href="login.html" class="b-log">Đăng nhập</a>
+            <a href="register.html" class="b-reg">Đăng ký</a>
+        </div>
+        <div id="user-ui-wrap" style="position:relative; display:none;">
+            <div class="u-pro" id="u-pro-btn" style="display:flex;">
+                <div class="avt">👤</div>
+                <span class="uname" id="nav-username">User</span>
+                <span>▼</span>
+            </div>
+            <div id="u-dropdown" class="u-menu">
+                <a href="profile.html">Chỉnh sửa trang cá nhân</a>
+                <a href="../../index.html" id="btn-logout" style="color:#EB5757;">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-img-bg" id="topic-hero-bg" style="background-color: var(--p);">
+        <div class="hero-overlay"></div>
+        <h1 id="topic-hero-title">ĐANG TẢI...</h1>
+    </div>
+
+    <main>
+        <div class="t-lay">
+            <section>
+                <div id="featured-post-container"></div>
+                <div class="post-list" id="topic-posts-list">
+                    <div style="text-align:center; padding:40px; color:var(--gy);">Đang tải bài viết...</div>
+                </div>
+            </section>
+
+            <aside>
+                <div class="t-info-box">
+                    <span class="sm-tag">Chủ đề</span>
+                    <h3 id="info-topic-title">TÊN CHỦ ĐỀ</h3>
+                    
+                    <h4>Mô tả nội dung</h4>
+                    <p id="info-topic-desc">Nội dung mô tả...</p>
+                    
+                    <h4>Link liên quan</h4>
+                    <ul id="info-topic-links"></ul>
+
+                    <div style="margin-top:20px; padding-top:16px; border-top:1px solid var(--bd); display:flex; justify-content:space-between; align-items:center;">
+                        <div class="btn-fav-topic-main" id="btn-toggle-topic-fav">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                            <span id="txt-fav-topic">Yêu thích</span> 
+                            <span style="font-weight:400; color:var(--gy);">(<span id="topic-like-cnt">0</span>)</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:4px; font-weight:700; font-size:14px; color:var(--star);" title="Đánh giá trung bình">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span id="topic-avg-rating">0.0</span>
+                            <span style="font-weight:400; color:var(--gy); font-size:13px;">(<span id="topic-rating-cnt">0</span>)</span>
+                        </div>
+                    </div>
+
+                    <div id="topic-rating-input-area" style="display:none; margin-top:16px; padding:16px; background:#FAFAFA; border-radius:8px; border:1px solid var(--bd);">
+                        <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Đánh giá của bạn về chủ đề này:</p>
+                        <div class="star-selector" id="topic-star-selector" data-val="0">
+                            <svg data-idx="1" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="2" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="3" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="4" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="5" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <button id="btn-submit-topic-rating" style="margin-top:12px; width:100%; padding:8px; background:var(--p); color:#FFF; border:none; border-radius:6px; font-weight:600; cursor:pointer;">Gửi Đánh Giá</button>
+                    </div>
+                </div>
+
+                <div class="fav-sb">
+                    <h2 class="fav-tit">Chủ đề bạn đã lưu</h2>
+                    <div class="fav-line"></div>
+                    
+                    <div id="guest-fav-prompt" class="auth-prompt">
+                        <p>Đăng nhập để xem danh sách chủ đề bạn đã lưu nhé!</p>
+                        <a href="login.html">Đăng nhập ngay</a>
+                    </div>
+                    
+                    <div id="liked-topics-sidebar" style="display:none; flex-direction:column;">
+                        <div id="liked-topics-list" style="display:flex; flex-direction:column; gap:12px;"></div>
+                        <div id="liked-topics-pagination" class="pg-wrap"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-cnt">
+            <div class="f-l">
+                <div class="logo" style="color:#FFF;"><div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div><span>YMaga</span></div>
+                <p>Website tạp chí điện tử tổng hợp cho phép người dùng đọc bài viết, theo dõi topic, tìm kiếm nội dung, lưu mục yêu thích và tương tác qua bình luận, đánh giá.</p>
+            </div>
+            <div class="f-r">
+                <h4>Liên hệ</h4>
+                <p>Email: nguyentienphukhang@gmail.com</p>
+                <p>Điện thoại: (+84) 394 190 222</p>
+            </div>
+        </div>
+        <div class="f-ln"></div>
+    </footer>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/topic-detail.ts"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga - Đăng ký</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:#FFF;min-height:100vh;overflow:hidden;display:flex;flex-direction:column}a{text-decoration:none;transition:.2s}a:hover{opacity:.8}.circles{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;z-index:0;pointer-events:none}.circle{position:absolute;border:1px solid #E4E4E4;border-radius:50%}.c1{width:max(46vw,600px);height:max(46vw,600px)}.c2{width:max(69vw,900px);height:max(69vw,900px)}.c3{width:max(92vw,1200px);height:max(92vw,1200px)}.c4{width:max(116vw,1500px);height:max(116vw,1500px)}header{position:absolute;top:0;left:0;width:100%;padding:40px 8vw;display:flex;align-items:center;z-index:20}.logo{display:flex;align-items:center;gap:12px}.logo-mark{position:relative;width:30px;height:30px}.rect{position:absolute;background:#DB754D}.r1,.r2{width:6px;height:30px;top:0}.r1{left:24px}.r2{left:0}.r3{width:6px;height:15px;left:12px;top:0}.r4,.r5{width:12px;height:9px;top:21px}.r4{left:0}.r5{left:18px}.logo-text{font-weight:600;font-size:24px;color:#10100E}main{position:relative;z-index:10;flex-grow:1;display:flex;justify-content:center;align-items:center;padding:20px}.register-box{width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;text-align:center}h1{font-weight:700;font-size:22px;color:#10100E;margin-bottom:6px}p.subtitle{font-weight:500;font-size:14px;color:#A7A7A7;margin-bottom:32px}form{width:100%;display:flex;flex-direction:column;gap:16px;text-align:left}.input-group{display:flex;flex-direction:column;gap:8px}.input-group label{font-weight:700;font-size:14px;color:#10100E;padding-left:4px}.input-group label span{color:#EB5757}.input-group input{width:100%;padding:14px 24px;border:1px solid #E4E4E4;border-radius:100px;font-family:'Montserrat',sans-serif;font-size:14px;outline:none;transition:.2s}.input-group input::placeholder{color:#BDBDBD;font-weight:400}.input-group input:focus{border-color:#DB754D}.checkbox-group{display:flex;align-items:flex-start;gap:8px;padding-left:4px;margin-top:4px}.checkbox-group input[type="checkbox"]{width:16px;height:16px;margin-top:2px;cursor:pointer;accent-color:#10100E}.checkbox-group label{font-weight:500;font-size:13px;color:#10100E;line-height:1.4;cursor:pointer}.error-msg{color:#EB5757;font-size:13px;font-weight:500;text-align:center;min-height:16px}.btn-submit{width:100%;padding:16px;background:#10100E;color:#FFF;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;border:none;border-radius:100px;cursor:pointer;transition:.2s;margin-top:4px}.btn-submit:disabled{background:#A7A7A7;cursor:not-allowed}.footer-links{margin-top:24px;font-size:14px;color:#10100E;display:flex;flex-direction:column;gap:16px;align-items:center}.footer-links .login-line{font-weight:500}.footer-links .login-line a{color:#2D9CDB;font-weight:600}.footer-links .guest-link{color:#A7A7A7;font-weight:500;text-decoration:underline;text-underline-offset:4px}</style>
+</head>
+<body>
+    <div class="circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+    </div>
+    
+    <header>
+        <a href="../../index.html" class="logo">
+            <div class="logo-mark">
+                <div class="rect r2"></div>
+                <div class="rect r3"></div>
+                <div class="rect r1"></div>
+                <div class="rect r4"></div>
+                <div class="rect r5"></div>
+            </div>
+            <span class="logo-text">YMaga</span>
+        </a>
+    </header>
+
+    <main>
+        <div class="register-box">
+            <h1>Tạo tài khoản của bạn</h1>
+            <p class="subtitle">Hãy bắt đầu nào!</p>
+            
+            <form id="registerForm">
+                <div class="input-group">
+                    <label>Tên hiển thị<span>*</span></label>
+                    <input type="text" id="display_name" placeholder="Nhập tên hiển thị của bạn" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Tên đăng nhập<span>*</span></label>
+                    <input type="text" id="username" placeholder="Nhập tên đăng nhập của bạn" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Mật khẩu<span>*</span></label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu của bạn" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Tôi đồng ý với tất cả Điều khoản và Chính sách bảo mật</label>
+                </div>
+                
+                <div class="error-msg" id="errorMsg"></div>
+                
+                <button type="submit" class="btn-submit" id="submitBtn">Đăng ký</button>
+            </form>
+            
+            <div class="footer-links">
+                <div class="login-line">Đã có tài khoản? <a href="login.html">Đăng nhập</a></div>
+                <a href="home.html" class="guest-link">Tiếp tục với vai trò khách</a>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../scripts/register.ts"></script>
+</body>
+</html>

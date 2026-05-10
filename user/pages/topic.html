@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga - Chủ Đề</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--g-main:linear-gradient(90deg,#E98B4B 0%,#C55849 100%);--dk:#10100E;--gy:#A7A7A7;--bg:#FFF;--bd:#E4E4E4;--tag-bg:#FFF2EC;--star:#F59E0B}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:#FAFAFA;color:var(--dk);overflow-x:hidden}a{text-decoration:none;color:inherit;transition:.2s}a:hover{opacity:.8}.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px;color:var(--dk)}.logo-mark{position:relative;width:30px;height:30px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:6px;height:30px;top:0}.r1{left:24px}.r2{left:0}.r3{width:6px;height:15px;left:12px;top:0}.r4,.r5{width:12px;height:9px;top:21px}.r4{left:0}.r5{left:18px}header{background:var(--bg);display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}.h-l{display:flex;align-items:center;gap:40px}nav{display:flex;gap:24px;font-weight:700;font-size:14px;text-transform:uppercase}nav a.act{color:var(--p)}.src{background:#F2F2F2;border-radius:8px;padding:10px 16px;display:flex;align-items:center;gap:8px;width:320px}.src input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.auth-btns{display:flex;gap:16px;align-items:center}.b-log{font-weight:600;font-size:14px}.b-reg{padding:8px 16px;background:#F2F2F2;border-radius:8px;font-weight:600;font-size:14px}.u-pro{display:none;align-items:center;gap:8px;cursor:pointer;background:#F2F2F2;padding:4px 12px 4px 4px;border-radius:50px}.avt{width:32px;height:32px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF;font-weight:700}.uname{font-weight:600;font-size:14px}.u-menu{display:none;position:absolute;top:115%;right:0;background:#FFF;border:1px solid var(--bd);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.1);flex-direction:column;min-width:230px;overflow:hidden;z-index:200}.u-menu.show{display:flex}.u-menu a{padding:14px 16px;font-size:14px;font-weight:600;border-bottom:1px solid #F2F2F2}footer{background:linear-gradient(90deg,#D45B42 0%,#E8904D 100%);color:#FFF;padding:60px 5vw 40px;display:flex;flex-direction:column;margin-top:60px}.f-cnt{display:flex;justify-content:space-between}.f-l{max-width:400px}.f-l p{font-size:14px;line-height:1.6;opacity:.9;margin-top:16px}.f-r h4{font-size:16px;margin-bottom:16px;font-weight:700}.f-r p{font-size:14px;opacity:.9;margin-bottom:12px}.f-ln{width:100%;height:1px;background:rgba(255,255,255,.2);margin-top:50px}.hero-topic{background:var(--g-main);padding:80px 20px;text-align:center;color:#FFF;position:relative;overflow:hidden}.hero-topic::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='1.5' d='M-100,50 C150,150 350,-50 600,50 C850,150 1050,-50 1200,50'/%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1' d='M-100,80 C150,180 350,-20 600,80 C850,180 1050,-20 1200,80'/%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='2' d='M-100,110 C150,210 350,10 600,110 C850,210 1050,10 1200,110'/%3E%3C/svg%3E");background-size:cover;background-position:center;pointer-events:none;z-index:1}.hero-topic h1{font-size:42px;font-weight:700;position:relative;z-index:2;text-transform:uppercase;letter-spacing:1px}main{max-width:1250px;margin:40px auto;padding:0 20px}.t-lay{display:grid;grid-template-columns:2.2fr 1fr;gap:40px}.t-grd{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:48px}.t-crd{background:#FFF;border:1px solid var(--bd);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;transition:.2s;cursor:pointer}.t-crd:hover{border-color:var(--p);box-shadow:0 4px 12px rgba(0,0,0,0.05)}.t-crd-top{display:flex;align-items:center;gap:16px}.t-ic{width:48px;height:48px;background:#E5F6FF;color:#0095FF;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0}.t-in{flex:1}.t-in h4{font-size:16px;font-weight:700;color:var(--dk);margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.t-in p{font-size:12px;color:var(--gy)}.t-crd-bot{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px dashed var(--bd)}.btn-bmk-topic{display:flex;align-items:center;gap:6px;color:var(--gy);cursor:pointer;font-size:13px;font-weight:600;transition:.2s;padding:4px 8px;border-radius:4px}.btn-bmk-topic:hover{background:#FFF2EC;color:var(--p)}.btn-bmk-topic.active{color:var(--p)}.btn-bmk-topic.active svg{fill:currentColor}.cat-sec{margin-bottom:40px;padding-top:20px;border-top:1px dashed var(--bd)}.cat-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.cat-hd h2{font-size:22px;font-weight:700;text-transform:uppercase}.cat-hd h2 a{color:var(--p);transition:.2s}.cat-hd h2 a:hover{opacity:.8}.slider-wrap{position:relative;display:flex;align-items:center}.slider-track{display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:4px;width:100%}.slider-track::-webkit-scrollbar{display:none}.p-card{background:#FFF;border:1px solid var(--bd);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;min-width:calc(25% - 12px);flex-shrink:0;transition:.2s}.p-card:hover{border-color:var(--gy);box-shadow:0 4px 12px rgba(0,0,0,0.05)}.p-card img{width:100%;height:120px;object-fit:cover}.p-card .p-inf{padding:12px;flex:1;display:flex;flex-direction:column}.p-card h3{font-size:13px;font-weight:700;line-height:1.4;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.slider-btn{width:36px;height:36px;background:#FFF;border:1px solid var(--bd);border-radius:50%;display:flex;justify-content:center;align-items:center;cursor:pointer;position:absolute;z-index:10;color:var(--gy);box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:.2s;font-size:16px;font-weight:bold}.slider-btn:hover{color:var(--p);border-color:var(--p)}.slider-btn.prev{left:-18px}.slider-btn.next{right:-18px}.fav-sb{background:var(--bg);border-radius:8px;padding:24px;border:1px solid var(--bd);position:sticky;top:90px}.fav-tit{font-size:18px;font-weight:700;color:var(--p);margin-bottom:16px}.fav-line{width:100%;border-top:1px solid var(--bd);margin-bottom:16px}.auth-prompt{background:#FFF9F5;border:1px dashed var(--p);border-radius:8px;padding:24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}.auth-prompt p{font-size:14px;color:var(--dk);line-height:1.5}.auth-prompt a{display:inline-block;padding:10px 20px;background:var(--p);color:#FFF;font-weight:600;border-radius:6px;font-size:14px}.pg-wrap{display:flex;justify-content:center;gap:6px;margin-top:16px;flex-wrap:wrap}.pg-btn{padding:4px 10px;border:1px solid var(--bd);background:#FFF;border-radius:4px;font-size:12px;font-weight:600;cursor:pointer;color:var(--gy)}.pg-btn.act{background:var(--p);color:#FFF;border-color:var(--p)}</style>
+</head>
+<body>
+    <header>
+        <div class="h-l">
+            <a href="../../index.html" class="logo">
+                <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+                <span>YMaga</span>
+            </a>
+            <nav>
+                <a href="home.html">TRANG CHỦ</a>
+                <a href="topic.html" class="act">CHỦ ĐỀ</a>
+            </nav>
+            <div class="src">
+                <span>🔍</span>
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+        <div id="guest-ui" class="auth-btns">
+            <a href="login.html" class="b-log">Đăng nhập</a>
+            <a href="register.html" class="b-reg">Đăng ký</a>
+        </div>
+        <div id="user-ui-wrap" style="position:relative; display:none;">
+            <div class="u-pro" id="u-pro-btn" style="display:flex;">
+                <div class="avt">👤</div>
+                <span class="uname" id="nav-username">User</span>
+                <span>▼</span>
+            </div>
+            <div id="u-dropdown" class="u-menu">
+                <a href="profile.html">Chỉnh sửa trang cá nhân</a>
+                <a href="../../index.html" id="btn-logout" style="color:#EB5757;">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-topic">
+        <h1>Chủ đề</h1>
+    </div>
+
+    <main>
+        <div class="t-lay">
+            <section>
+                <div class="t-grd" id="topics-grid-container">
+                    <div style="grid-column:1/-1; text-align:center; color:var(--gy); padding:20px;">Đang tải danh sách chủ đề...</div>
+                </div>
+
+                <div id="topics-posts-container"></div>
+            </section>
+
+            <aside>
+                <div class="fav-sb">
+                    <h2 class="fav-tit">Chủ đề bạn đã lưu</h2>
+                    <div class="fav-line"></div>
+                    
+                    <div id="guest-fav-prompt" class="auth-prompt">
+                        <p>Đăng nhập để xem danh sách chủ đề bạn đã lưu nhé!</p>
+                        <a href="login.html">Đăng nhập ngay</a>
+                    </div>
+                    
+                    <div id="liked-topics-sidebar" style="display:none; flex-direction:column;">
+                        <div id="liked-topics-list" style="display:flex; flex-direction:column; gap:12px;"></div>
+                        <div id="liked-topics-pagination" class="pg-wrap"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-cnt">
+            <div class="f-l">
+                <div class="logo" style="color:#FFF;">
+                    <div class="logo-mark"><div class="rect r2" style="background:#FFF"></div><div class="rect r3" style="background:#FFF"></div><div class="rect r1" style="background:#FFF"></div><div class="rect r4" style="background:#FFF"></div><div class="rect r5" style="background:#FFF"></div></div>
+                    <span>YMaga</span>
+                </div>
+                <p>Website tạp chí điện tử tổng hợp cho phép người dùng đọc bài viết, theo dõi topic, tìm kiếm nội dung, lưu mục yêu thích và tương tác qua bình luận.</p>
+            </div>
+            <div class="f-r">
+                <h4>Liên hệ</h4>
+                <p>Email: nguyentienphukhang@gmail.com</p>
+                <p>Điện thoại: (+84) 394 190 222</p>
+            </div>
+        </div>
+        <div class="f-ln"></div>
+    </footer>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/topic.ts"></script>
+</body>
+</html>

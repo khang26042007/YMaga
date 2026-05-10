@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga - Trang cá nhân</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--g-main:linear-gradient(90deg,#E98B4B 0%,#C55849 100%);--g-txt:linear-gradient(90deg,#E88A4B 0%,#C55849 100%);--dk:#10100E;--gy:#A7A7A7;--bg:#FFF;--bd:#E4E4E4;--tag-bg:#FFF2EC}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:#FAFAFA;color:var(--dk);overflow-x:hidden}a{text-decoration:none;color:inherit;transition:.2s}a:hover{opacity:.8}.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px;color:var(--dk)}.logo-mark{position:relative;width:30px;height:30px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:6px;height:30px;top:0}.r1{left:24px}.r2{left:0}.r3{width:6px;height:15px;left:12px;top:0}.r4,.r5{width:12px;height:9px;top:21px}.r4{left:0}.r5{left:18px}header{background:var(--bg);display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}.h-l{display:flex;align-items:center;gap:40px}nav{display:flex;gap:24px;font-weight:700;font-size:14px;text-transform:uppercase}nav a.act{color:var(--p)}.src{background:#F2F2F2;border-radius:8px;padding:10px 16px;display:flex;align-items:center;gap:8px;width:320px}.src input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.auth-btns{display:flex;gap:16px;align-items:center}.b-log{font-weight:600;font-size:14px}.b-reg{padding:8px 16px;background:#F2F2F2;border-radius:8px;font-weight:600;font-size:14px}.u-pro{display:flex;align-items:center;gap:8px;cursor:pointer;background:#F2F2F2;padding:4px 12px 4px 4px;border-radius:50px}.avt{width:32px;height:32px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF;font-weight:700}.uname{font-weight:600;font-size:14px}.u-menu{display:none;position:absolute;top:115%;right:0;background:#FFF;border:1px solid var(--bd);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.1);flex-direction:column;min-width:230px;overflow:hidden;z-index:200}.u-menu.show{display:flex}.u-menu a{padding:14px 16px;font-size:14px;font-weight:600;border-bottom:1px solid #F2F2F2}.u-menu a:last-child{border-bottom:none}.u-menu a:hover{background:#F9F9F9;opacity:1}.p-bn{height:200px;background:var(--g-main);width:100%}.p-mn{max-width:1250px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:280px 1fr;gap:40px;position:relative;top:-100px}.p-if{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:24px;display:flex;flex-direction:column;align-items:center;text-align:center;height:fit-content}.p-avt{width:150px;height:150px;border-radius:50%;border:4px solid #FFF;object-fit:cover;margin-top:-80px;margin-bottom:16px;background:#EEE;box-shadow:0 4px 12px rgba(0,0,0,0.1)}.p-if h2{font-size:22px;font-weight:700;margin-bottom:4px}.p-if p{color:var(--gy);font-size:14px;margin-bottom:24px;line-height:1.5}.b-ed{width:100%;padding:10px;background:transparent;border:1px solid var(--bd);border-radius:8px;font-weight:600;font-size:14px;cursor:pointer;transition:.2s;color:var(--dk)}.b-ed:hover{border-color:var(--p);color:var(--p)}.p-ct{margin-top:100px;display:flex;flex-direction:column;gap:24px}.p-hd{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding-bottom:16px}.p-hd h3{font-size:24px;font-weight:700;display:flex;align-items:center;gap:10px;color:var(--dk)}.p-gr{display:grid;grid-template-columns:1.6fr 1fr;gap:32px}.pc-crd{display:flex;gap:16px;background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:16px;margin-bottom:16px;transition:.2s}.pc-crd:hover{box-shadow:0 4px 12px rgba(0,0,0,0.05);border-color:var(--gy)}.pc-crd img{width:160px;height:100px;border-radius:8px;object-fit:cover}.pc-in{flex:1;display:flex;flex-direction:column;justify-content:space-between}.pc-tg{font-size:12px;color:var(--p);font-weight:700;margin-bottom:4px;display:inline-block;padding:2px 8px;background:var(--tag-bg);border-radius:4px}.pc-tt{font-size:16px;font-weight:700;line-height:1.4;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.pc-mt{font-size:12px;color:var(--gy);display:flex;align-items:center;gap:8px}.pc-bt{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--gy);margin-top:8px}.pc-ac{display:flex;gap:12px;color:var(--gy);align-items:center}.pc-ac div{display:flex;align-items:center;gap:4px;cursor:pointer;transition:.2s}.pc-ac div:hover{color:var(--p)}.fav-sb{background:var(--bg);border-radius:12px;padding:24px;border:1px solid var(--bd);display:flex;flex-direction:column;gap:12px;position:sticky;top:90px}.fav-tit{font-size:18px;font-weight:700;color:var(--p);margin-bottom:8px}.fav-line{width:100%;border-top:1px dashed var(--bd);margin-bottom:12px}.t-crd-sm{display:flex;align-items:center;padding:10px;background:#FAFAFA;border:1px solid var(--bd);border-radius:8px;gap:12px;margin-bottom:10px;cursor:pointer;transition:.2s}.t-crd-sm:hover{border-color:var(--gy)}.t-crd-sm .t-ic{width:32px;height:32px;background:#E5F6FF;color:#0095FF;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}.t-crd-sm .t-in{flex:1}.t-crd-sm .t-in h4{font-size:14px;margin-bottom:2px;font-weight:600;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.t-crd-sm .t-in p{font-size:10px;color:var(--gy)}footer{background:linear-gradient(90deg,#D45B42 0%,#E8904D 100%);color:#FFF;padding:60px 5vw 40px;display:flex;flex-direction:column;margin-top:60px}.f-cnt{display:flex;justify-content:space-between}.f-l{max-width:400px}.f-l .logo{color:#FFF;margin-bottom:16px}.f-l .rect{background:#FFF}.f-l p{font-size:14px;line-height:1.6;opacity:.9}.f-r h4{font-size:16px;margin-bottom:16px;font-weight:700}.f-r p{font-size:14px;opacity:.9;margin-bottom:12px}.f-ln{width:100%;height:1px;background:rgba(255,255,255,.2);margin-top:50px}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;justify-content:center;align-items:center;z-index:1000;opacity:0;transition:.2s}.modal-overlay.show{display:flex;opacity:1}.modal-box{background:#FFF;width:400px;border-radius:12px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,0.2);transform:translateY(-20px);transition:.3s}.modal-overlay.show .modal-box{transform:translateY(0)}.m-hd{font-size:20px;font-weight:700;margin-bottom:20px;text-align:center;color:var(--dk)}.m-fg{margin-bottom:16px;display:flex;flex-direction:column;gap:6px}.m-fg label{font-size:13px;font-weight:600;color:var(--gy)}.m-fg input,.m-fg textarea{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:6px;outline:none;font-family:inherit;font-size:14px}.m-fg input:focus,.m-fg textarea:focus{border-color:var(--p)}.m-act{display:flex;gap:12px;margin-top:24px}.m-btn{flex:1;padding:12px;border-radius:6px;font-weight:600;cursor:pointer;text-align:center;border:1px solid transparent;transition:.2s}.m-btn.canc{background:#F2F2F2;color:var(--dk)}.m-btn.canc:hover{background:#E4E4E4}.m-btn.save{background:var(--p);color:#FFF}.m-btn.save:hover{opacity:.9}.m-pwd-link{font-size:13px;color:var(--p);font-weight:600;cursor:pointer;text-align:right;display:block;margin-top:-8px;margin-bottom:16px}.pg-wrap{display:flex;justify-content:center;gap:6px;margin-top:16px;flex-wrap:wrap}.pg-btn{padding:4px 10px;border:1px solid var(--bd);background:#FFF;border-radius:4px;font-size:12px;font-weight:600;cursor:pointer;color:var(--gy)}.pg-btn.act{background:var(--p);color:#FFF;border-color:var(--p)}</style>
+</head>
+<body>
+    <header>
+        <div class="h-l">
+            <a href="../../index.html" class="logo">
+                <div class="logo-mark">
+                    <div class="rect r2"></div>
+                    <div class="rect r3"></div>
+                    <div class="rect r1"></div>
+                    <div class="rect r4"></div>
+                    <div class="rect r5"></div>
+                </div>
+                <span>YMaga</span>
+            </a>
+            <nav>
+                <a href="home.html">TRANG CHỦ</a>
+                <a href="topic.html">CHỦ ĐỀ</a>
+            </nav>
+            <div class="src">
+                <span style="color:#A7A7A7">🔍</span>
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+        
+        <div id="guest-ui" class="auth-btns" style="display:none;">
+            <a href="login.html" class="b-log">Đăng nhập</a>
+            <a href="register.html" class="b-reg">Đăng ký</a>
+        </div>
+        <div id="user-ui-wrap" style="position:relative; display:none;">
+            <div class="u-pro" id="u-pro-btn">
+                <div class="avt">👤</div>
+                <span class="uname" id="nav-username">Người dùng</span>
+                <span style="font-size:10px;padding-right:8px">▼</span>
+            </div>
+            <div id="u-dropdown" class="u-menu">
+                <a href="profile.html">Chỉnh sửa trang cá nhân</a>
+                <a href="../../index.html" id="btn-logout" style="color: #EB5757;">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="p-bn"></div>
+
+    <main class="p-mn">
+        <aside class="p-if">
+            <img src="https://ui-avatars.com/api/?name=User&background=E4E4E4&color=10100E" alt="Avatar" class="p-avt" id="profile-avatar">
+            <h2 id="profile-name">Đang tải...</h2>
+            <p id="profile-handle">@dang_tai</p>
+            <p id="profile-bio" style="font-size:13px; color:var(--dk); margin-bottom:24px; font-style:italic; display:none;"></p>
+            <button class="b-ed" id="btn-edit-profile">Chỉnh sửa trang cá nhân</button>
+        </aside>
+
+        <section class="p-ct">
+            <div class="p-hd">
+                <h3 style="display:flex; align-items:center; gap:10px; font-size:24px; font-weight:700; color:var(--dk)">
+                    <div style="display: flex; flex-direction: column; align-items: flex-start; padding: 3px 4px; width: 20px; height: 20px;">
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H11.67V15L5.835 11.5L0 15V0Z" fill="#F8B700"/>
+                        </svg>
+                    </div>
+                    Thư viện của bạn
+                </h3>
+            </div>
+            
+            <div class="p-gr">
+                <div>
+                    <h4 style="font-size:16px; margin-bottom:16px; color:var(--dk);">Bài viết đã lưu</h4>
+                    <div id="liked-posts-container">
+                        <div style="color:var(--gy); font-style:italic">Đang tải bài viết yêu thích...</div>
+                    </div>
+                    <div id="liked-posts-pagination" class="pg-wrap" style="margin-bottom:32px;"></div>
+                </div>
+
+                <aside class="fav-sb">
+                    <h2 class="fav-tit">Chủ đề đã lưu</h2>
+                    <div class="fav-line"></div>
+                    <div id="liked-topics-container" style="display: flex; flex-direction: column; width: 100%;">
+                        <div style="color:var(--gy); font-style:italic">Đang tải chủ đề...</div>
+                    </div>
+                    <div id="liked-topics-pagination" class="pg-wrap"></div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="f-cnt">
+            <div class="f-l">
+                <div class="logo">
+                    <div class="logo-mark">
+                        <div class="rect r2"></div>
+                        <div class="rect r3"></div>
+                        <div class="rect r1"></div>
+                        <div class="rect r4"></div>
+                        <div class="rect r5"></div>
+                    </div>
+                    <span>YMaga</span>
+                </div>
+                <p>Website tạp chí điện tử tổng hợp cho phép người dùng đọc bài viết, theo dõi topic, tìm kiếm nội dung, lưu mục yêu thích và tương tác qua bình luận, đánh giá.</p>
+            </div>
+            <div class="f-r">
+                <h4>Liên hệ</h4>
+                <p>Email: nguyentienphukhang@gmail.com</p>
+                <p>Điện thoại: (+84) 394 190 222</p>
+            </div>
+        </div>
+        <div class="f-ln"></div>
+    </footer>
+
+    <div class="modal-overlay" id="edit-modal">
+        <div class="modal-box">
+            <div class="m-hd">Chỉnh sửa trang cá nhân</div>
+            <div class="m-fg">
+                <label>Tên hiển thị</label>
+                <input type="text" id="edit-name">
+            </div>
+            <div class="m-fg">
+                <label>Tên người dùng</label>
+                <input type="text" id="edit-usr" placeholder="">
+            </div>
+            <span class="m-pwd-link" id="open-pwd-btn">Đổi mật khẩu?</span>
+            
+            <div class="m-act">
+                <button class="m-btn canc" id="close-edit-btn">Hủy</button>
+                <button class="m-btn save" id="save-edit-btn">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="pwd-modal">
+        <div class="modal-box">
+            <div class="m-hd">Đổi mật khẩu</div>
+            <div class="m-fg">
+                <label>Mật khẩu hiện tại</label>
+                <input type="password" id="pwd-old" placeholder="Nhập mật khẩu cũ">
+            </div>
+            <div class="m-fg">
+                <label>Mật khẩu mới</label>
+                <input type="password" id="pwd-new" placeholder="Nhập mật khẩu mới">
+            </div>
+            <div class="m-fg">
+                <label>Xác nhận mật khẩu mới</label>
+                <input type="password" id="pwd-cf" placeholder="Nhập lại mật khẩu mới">
+            </div>
+            
+            <div class="m-act">
+                <button class="m-btn canc" id="close-pwd-btn">Hủy</button>
+                <button class="m-btn save" id="save-pwd-btn">Cập nhật</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/profile.ts"></script>
+</body>
+</html>

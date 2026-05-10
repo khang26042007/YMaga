@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga - Chi tiết bài viết</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--g-main:linear-gradient(90deg,#E98B4B 0%,#C55849 100%);--dk:#10100E;--gy:#A7A7A7;--bg:#FFF;--bd:#E4E4E4;--tag-bg:#FFF2EC;--star:#F59E0B}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:#F5F5F5;color:var(--dk);overflow-x:hidden;line-height:1.6}a{text-decoration:none;color:inherit;transition:.2s}a:hover{opacity:.8}.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px;color:var(--dk)}.logo-mark{position:relative;width:30px;height:30px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:6px;height:30px;top:0}.r1{left:24px}.r2{left:0}.r3{width:6px;height:15px;left:12px;top:0}.r4,.r5{width:12px;height:9px;top:21px}.r4{left:0}.r5{left:18px}header{background:var(--bg);display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}.h-l{display:flex;align-items:center;gap:40px}nav{display:flex;gap:24px;font-weight:700;font-size:14px;text-transform:uppercase}nav a.act{color:var(--p)}.src{background:#F2F2F2;border-radius:8px;padding:10px 16px;display:flex;align-items:center;gap:8px;width:320px}.src input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.auth-btns{display:flex;gap:16px;align-items:center}.b-log{font-weight:600;font-size:14px}.b-reg{padding:8px 16px;background:#F2F2F2;border-radius:8px;font-weight:600;font-size:14px}.u-pro{display:none;align-items:center;gap:8px;cursor:pointer;background:#F2F2F2;padding:4px 12px 4px 4px;border-radius:50px}.avt{width:32px;height:32px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF;font-weight:700}.uname{font-weight:600;font-size:14px}.u-menu{display:none;position:absolute;top:115%;right:0;background:#FFF;border:1px solid var(--bd);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.1);flex-direction:column;min-width:230px;overflow:hidden;z-index:200}.u-menu.show{display:flex}.u-menu a{padding:14px 16px;font-size:14px;font-weight:600;border-bottom:1px solid #F2F2F2}footer{background:linear-gradient(90deg,#D45B42 0%,#E8904D 100%);color:#FFF;padding:60px 5vw 40px;display:flex;flex-direction:column;margin-top:60px}.f-cnt{display:flex;justify-content:space-between;align-items:flex-start}.f-l{max-width:450px}.f-l p{font-size:14px;line-height:1.8;opacity:.9;margin-top:16px}.f-r h4{font-size:16px;margin-bottom:16px;font-weight:700;text-transform:uppercase}.f-r p{font-size:14px;opacity:.9;margin-bottom:12px}.f-ln{width:100%;height:1px;background:rgba(255,255,255,.2);margin-top:50px}main{max-width:850px;margin:40px auto;padding:40px 60px;background:#FFF;border:1px solid var(--bd);border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.03)}.tag{background:var(--tag-bg);color:var(--p);padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;display:inline-block;margin-bottom:12px}.act-btns{display:flex;gap:12px;color:var(--gy);align-items:center}.act-btn{cursor:pointer;transition:.2s;display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;padding:8px 16px;border:1px solid var(--bd);border-radius:50px;color:var(--dk);background:#FFF}.act-btn:hover{border-color:var(--p);color:var(--p)}.act-btn.active.btn-bookmark{color:var(--p);border-color:var(--p)}.act-btn.active.btn-bookmark svg{fill:currentColor;stroke:var(--p)}.act-btn.btn-star{cursor:default}.act-btn.btn-star:hover{border-color:var(--bd);color:var(--dk)}#post-content img{width:100%;border-radius:8px;margin:24px 0 8px;display:block}#post-content p{margin-bottom:20px;font-size:16px;line-height:1.8;color:#333;text-align:justify}.star-selector{display:flex;gap:4px;cursor:pointer}.star-selector svg{fill:none;stroke:var(--gy);transition:.2s}.star-selector svg.hovered,.star-selector svg.selected{fill:var(--star);stroke:var(--star)}.pg-wrap{display:flex;justify-content:center;gap:6px;margin-top:32px}.pg-btn{padding:6px 12px;border:1px solid var(--bd);background:#FFF;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer;color:var(--gy)}.pg-btn.act{background:var(--p);color:#FFF;border-color:var(--p)}</style>
+</head>
+<body>
+    <header>
+        <div class="h-l">
+            <a href="../../index.html" class="logo">
+                <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+                <span>YMaga</span>
+            </a>
+            <nav>
+                <a href="home.html">TRANG CHỦ</a>
+                <a href="topic.html">CHỦ ĐỀ</a>
+            </nav>
+            <div class="src">
+                <span>🔍</span>
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+        <div id="guest-ui" class="auth-btns">
+            <a href="login.html" class="b-log">Đăng nhập</a>
+            <a href="register.html" class="b-reg">Đăng ký</a>
+        </div>
+        <div id="user-ui-wrap" style="position:relative; display:none;">
+            <div class="u-pro" id="u-pro-btn" style="display:flex;">
+                <div class="avt">👤</div>
+                <span class="uname" id="nav-username">User</span>
+                <span>▼</span>
+            </div>
+            <div id="u-dropdown" class="u-menu">
+                <a href="profile.html">Chỉnh sửa trang cá nhân</a>
+                <a href="../../index.html" id="btn-logout" style="color:#EB5757;">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div style="margin-bottom:40px;">
+                <a class="tag" id="post-cat">Đang tải...</a>
+                <h1 id="post-tit" style="font-size:36px; font-weight:700; color:var(--dk); line-height:1.4; margin:12px 0 16px; letter-spacing:-0.5px;">Đang tải bài viết...</h1>
+                <p id="post-subtit" style="font-size:16px; color:var(--gy); margin-bottom:24px;"></p>
+                
+                <img id="post-cover" src="" style="width:100%; max-height:450px; object-fit:cover; border-radius:12px; margin-bottom:24px; display:none;" alt="Cover image">
+
+                <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:24px; border-bottom:1px solid var(--bd);">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                        <img src="https://ui-avatars.com/api/?name=YM&background=E4E4E4&color=10100E" style="width:48px; height:48px; border-radius:50%; object-fit:cover;">
+                        <div style="display:flex; flex-direction:column; gap:2px;">
+                            <span style="font-weight:700; font-size:15px; color:var(--dk);">Ban biên tập YMaga</span>
+                            <span id="post-time" style="font-size:13px; color:var(--gy);">Thời gian</span>
+                        </div>
+                    </div>
+                    
+                    <div class="act-btns">
+                        <div class="act-btn btn-star" title="Đánh giá trung bình">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--star)" stroke="var(--star)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span id="avg-rating">0.0</span>
+                        </div>
+                        <a href="#cmt-section" class="act-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> 
+                            <span id="cmt-count">0</span>
+                        </a>
+                        <div class="act-btn btn-bookmark" id="btn-save-post">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                            <span id="fav-text">Lưu bài</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="post-content">
+                <div style="text-align:center; color:var(--gy); padding: 40px;">Đang tải nội dung...</div>
+            </div>
+
+            <div style="margin-top:48px; display:flex; gap:8px; flex-wrap:wrap;" id="post-tags"></div>
+        </article>
+
+        <section id="cmt-section" style="border-top:2px solid var(--bd); padding-top:40px; margin-top:40px;">
+            <h3 style="font-size:22px; font-weight:700; margin-bottom:24px;">Bình luận & Đánh giá</h3>
+            
+            <div style="margin-bottom:32px;">
+                <div id="cmt-guest-prompt" style="padding:32px; text-align:center; background:#FFF9F5; border:1px dashed var(--p); border-radius:8px;">
+                    <p style="margin-bottom:16px; font-size:15px; font-weight:500; color:var(--dk);">Đăng nhập để tham gia thảo luận văn minh cùng cộng đồng YMaga.</p>
+                    <a href="login.html" style="display:inline-block; padding:12px 24px; background:var(--p); color:#FFF; border-radius:6px; font-weight:600; font-size:14px;">Đăng nhập ngay</a>
+                </div>
+
+                <div id="cmt-user-input" style="display:none; flex-direction:column; gap:16px; padding:20px; border-radius:8px; border:1px solid var(--bd); background:#FAFAFA;">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                        <span style="font-weight:600; font-size:14px;">Chất lượng bài viết:</span>
+                        <div class="star-selector" id="new-cmt-stars" data-val="5">
+                            <svg data-idx="1" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="2" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="3" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="4" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg data-idx="5" width="22" height="22" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                    </div>
+                    <textarea id="cmt-input" placeholder="Chia sẻ góc nhìn của bạn..." style="width:100%; padding:16px; border:1px solid var(--bd); border-radius:8px; outline:none; font-family:inherit; font-size:14px; min-height:100px; resize:vertical;"></textarea>
+                    
+                    <div id="cmt-alert" style="display:none; color:#EB5757; font-size:13px; font-weight:500;"></div>
+                    
+                    <button id="btn-submit-cmt" style="align-self:flex-end; padding:10px 24px; background:var(--p); color:#FFF; border:none; border-radius:6px; font-weight:600; cursor:pointer;">Gửi bình luận</button>
+                </div>
+            </div>
+
+            <div id="cmt-list-container" style="display:flex; flex-direction:column; gap:24px;"></div>
+            <div id="cmt-pagination" class="pg-wrap"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="f-cnt">
+            <div class="f-l">
+                <div class="logo" style="color:#FFF;"><div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div><span>YMaga</span></div>
+                <p>Website tạp chí điện tử tổng hợp cho phép người dùng đọc bài viết, theo dõi topic, tìm kiếm nội dung, lưu mục yêu thích và tương tác qua bình luận, đánh giá.</p>
+            </div>
+            <div class="f-r">
+                <h4>Liên hệ</h4>
+                <p>Email: nguyentienphukhang@gmail.com</p>
+                <p>Điện thoại: (+84) 394 190 222</p>
+            </div>
+        </div>
+        <div class="f-ln"></div>
+    </footer>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/post-detail.ts"></script>
+</body>
+</html>
