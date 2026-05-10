@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga Admin - Kiểm duyệt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--p-bg:#FFF1EC;--bg:#F4F6F8;--dk:#10100E;--gy:#8C92A4;--bd:#EAEAEA;--rd:#EF4444;--og:#F97316;--gr:#10B981;--sd-w:260px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--dk);display:flex;height:100vh;overflow:hidden}a{text-decoration:none;color:inherit}.sidebar{width:var(--sd-w);background:#FFF;border-right:1px solid var(--bd);display:flex;flex-direction:column;flex-shrink:0}.logo-sec{padding:24px 32px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px}.logo-mark{position:relative;width:24px;height:24px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:5px;height:24px;top:0}.r1{left:19px}.r2{left:0}.r3{width:5px;height:12px;left:9.5px;top:0}.r4,.r5{width:9px;height:7px;top:17px}.r4{left:0}.r5{left:15px}.u-info{padding:0 32px 24px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:12px}.u-avt{width:40px;height:40px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF}.u-det{display:flex;flex-direction:column;gap:2px}.u-name{font-size:13px;font-weight:600;color:var(--p)}.u-mail{font-size:11px;color:var(--gy);margin-bottom:2px}.u-badge{background:#F4A281;color:#FFF;font-size:10px;font-weight:600;padding:2px 10px;border-radius:4px;width:fit-content}.nav-menu{padding:24px 16px;display:flex;flex-direction:column;gap:4px;flex:1}.nav-it{padding:14px 16px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--gy);border-radius:8px;cursor:pointer;transition:.2s}.nav-it:hover{background:#FAFAFA;color:var(--dk)}.nav-it.act{background:var(--p-bg);color:var(--p)}.main-lay{flex:1;display:flex;flex-direction:column;overflow:hidden}.top-bar{background:#FFF;padding:24px 40px;border-bottom:1px solid var(--bd)}.top-tit{font-size:22px;font-weight:700;color:var(--p);text-transform:uppercase}.content{padding:40px;overflow-y:auto;flex:1}.card{background:#FFF;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.02);padding:32px}.tb-tool{display:flex;gap:16px;margin-bottom:24px}.search-box{flex:1;display:flex;background:#F9FAFB;border-radius:6px;padding:12px 16px;align-items:center;gap:10px}.search-box input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.filter-sel{padding:12px 16px;border:none;border-radius:6px;font-family:inherit;font-size:14px;font-weight:500;outline:none;background:#F9FAFB;color:var(--dk);cursor:pointer;min-width:160px}.tb-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:16px;border-bottom:2px solid var(--bd)}.tb-hd h2{font-size:16px;font-weight:700;text-transform:uppercase;color:var(--dk)}.mass-acts{display:flex;gap:12px}.btn-mass{padding:10px 16px;border-radius:6px;font-family:inherit;font-size:13px;font-weight:600;color:#FFF;border:none;cursor:pointer;transition:.2s}.btn-mass:hover{opacity:.8}.btn-mass:active{transform:scale(0.98)}.bg-red{background:var(--rd)}.bg-org{background:var(--og)}table{width:100%;border-collapse:collapse}th{text-align:left;padding:16px;font-size:13px;color:var(--gy);font-weight:600;border-bottom:1px solid var(--bd)}td{padding:20px 16px;border-bottom:1px solid var(--bd);vertical-align:top}.td-cmt{width:35%}.cmt-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}.cmt-head h4{font-size:14px;font-weight:600}.cmt-head span{font-size:11px;color:var(--gy);font-weight:400}.cmt-box{border:1px solid var(--bd);border-radius:6px;padding:12px;font-size:13px;color:var(--gy);line-height:1.5;background:#FAFAFA}.td-post{font-size:13px;font-weight:600;color:var(--dk);line-height:1.4;width:20%}.src-badge{display:inline-block;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:600;color:#FFF}.src-ai{background:var(--dk)}.src-usr{background:var(--og)}.td-rsn{font-size:13px;color:var(--og);font-weight:500}.td-stt{font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px}.dot{width:6px;height:6px;border-radius:50%}.d-rd{background:var(--rd)}.d-og{background:var(--og)}.d-gr{background:var(--gr)}.c-rd{color:var(--rd)}.c-og{color:var(--og)}.c-gr{color:var(--gr)}.td-acts{display:flex;flex-direction:column;gap:8px;align-items:flex-end;position:relative}.btn-sm{padding:6px 12px;font-family:inherit;font-size:12px;font-weight:600;border-radius:4px;cursor:pointer;width:120px;text-align:center;background:transparent}.b-out-rd{border:1px solid var(--rd);color:var(--rd)}.b-out-og{border:1px solid var(--og);color:var(--og)}.b-out-gr{border:1px solid var(--gr);color:var(--gr)}.b-fil-rd{border:none;background:var(--rd);color:#FFF}.btn-del{position:absolute;bottom:-20px;right:0;color:var(--gy);cursor:pointer;font-size:16px;background:none;border:none}</style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo-sec">
+            <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+            YMaga
+        </div>
+        <div class="u-info">
+            <div class="u-avt">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="u-det">
+                <span class="u-name" id="admin-display-name">Tên tài khoản</span>
+                <span class="u-mail" id="admin-email">admin@ymaga.vn</span>
+                <span class="u-badge" id="admin-role">Admin</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="post.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Bài viết
+            </a>
+            <a href="topic.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Chủ đề
+            </a>
+            <a href="comment.html" class="nav-it act">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Kiểm duyệt
+            </a>
+            <a href="mod.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Phân quyền
+            </a>
+            <a href="#" id="btn-logout" class="nav-it" style="margin-top: auto; color: #EF4444;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                Đăng xuất
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-lay">
+        <header class="top-bar">
+            <h1 class="top-tit">KIỂM DUYỆT</h1>
+        </header>
+
+        <section class="content">
+            <div class="card">
+                <div class="tb-tool">
+                    <div class="search-box">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A7A7A7" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="searchCmt" placeholder="Tìm kiếm bình luận">
+                    </div>
+                    <select class="filter-sel" id="srcFilter">
+                        <option value="all">Tất cả nguồn</option>
+                        <option value="ai">Tự động: AI</option>
+                        <option value="user">Người dùng báo cáo</option>
+                    </select>
+                    <!-- Đã bỏ select Lọc trạng thái -->
+                </div>
+
+                <div class="tb-hd">
+                    <h2>BÌNH LUẬN BỊ GẮN CỜ CHỜ XỬ LÝ</h2>
+                    <!-- <div class="mass-acts">
+                        <button class="btn-mass bg-red" id="btn-block-ai">Chặn tất cả nội dung do AI duyệt</button>
+                        <button class="btn-mass bg-org" id="btn-block-user">Chặn tất cả nội dung do user báo cáo</button>
+                    </div> -->
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bình luận</th>
+                            <th>Địa chỉ bình luận</th>
+                            <th>Nguồn</th>
+                            <th>Lý do</th>
+                            <th>Trạng thái</th>
+                            <th style="text-align: right;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comment-table-body">
+                        <tr><td colspan="6" style="text-align:center; padding:40px; color:var(--gy);">Đang tải dữ liệu...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/comment.ts"></script>
+</body>
+</html>
