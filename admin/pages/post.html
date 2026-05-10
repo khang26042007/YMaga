@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga Admin - Quản lý bài viết</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--p-bg:#FFF1EC;--bg:#F4F6F8;--dk:#10100E;--gy:#8C92A4;--bd:#EAEAEA;--rd:#EF4444;--gr:#10B981;--gray:#9CA3AF;--sd-w:260px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--dk);display:flex;height:100vh;overflow:hidden}a{text-decoration:none;color:inherit}.sidebar{width:var(--sd-w);background:#FFF;border-right:1px solid var(--bd);display:flex;flex-direction:column;flex-shrink:0}.logo-sec{padding:24px 32px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px}.logo-mark{position:relative;width:24px;height:24px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:5px;height:24px;top:0}.r1{left:19px}.r2{left:0}.r3{width:5px;height:12px;left:9.5px;top:0}.r4,.r5{width:9px;height:7px;top:17px}.r4{left:0}.r5{left:15px}.u-info{padding:0 32px 24px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:12px}.u-avt{width:40px;height:40px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF}.u-det{display:flex;flex-direction:column;gap:2px}.u-name{font-size:13px;font-weight:600;color:var(--p)}.u-mail{font-size:11px;color:var(--gy);margin-bottom:2px}.u-badge{background:#F4A281;color:#FFF;font-size:10px;font-weight:600;padding:2px 10px;border-radius:4px;width:fit-content}.nav-menu{padding:24px 16px;display:flex;flex-direction:column;gap:4px;flex:1}.nav-it{padding:14px 16px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--gy);border-radius:8px;cursor:pointer;transition:.2s}.nav-it:hover{background:#FAFAFA;color:var(--dk)}.nav-it.act{background:var(--p-bg);color:var(--p)}.main-lay{flex:1;display:flex;flex-direction:column;overflow:hidden}.top-bar{background:#FFF;padding:24px 40px;border-bottom:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center}.top-tit{font-size:22px;font-weight:700;color:var(--p);text-transform:uppercase}.btn-new{background:var(--p);color:#FFF;border:none;padding:12px 20px;border-radius:6px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px}.btn-new:hover{opacity:.9}.content{padding:40px;overflow-y:auto;flex:1}.card{background:#FFF;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.02);padding:32px}.tb-tool{display:flex;gap:16px;margin-bottom:24px}.search-box{flex:1;display:flex;background:#F9FAFB;border-radius:6px;padding:12px 16px;align-items:center;gap:10px}.search-box input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.filter-sel{padding:12px 16px;border:none;border-radius:6px;font-family:inherit;font-size:14px;font-weight:500;outline:none;background:#F9FAFB;color:var(--dk);cursor:pointer;min-width:160px}.sort-bar{display:flex;gap:16px;font-size:13px;font-weight:600;color:var(--dk);margin-bottom:16px;user-select:none}.sort-it{cursor:pointer;color:var(--gy);transition:0.2s}.sort-it:hover{color:var(--p)}.sort-it.act{color:var(--dk)}table{width:100%;border-collapse:collapse}th{text-align:left;padding:16px;font-size:13px;color:var(--gy);font-weight:600;border-bottom:1px solid var(--bd)}td{padding:20px 16px;border-bottom:1px solid var(--bd);vertical-align:top}.td-tit{font-size:14px;font-weight:700;color:var(--dk);line-height:1.4;width:25%}.td-auth h4{font-size:14px;font-weight:600;margin-bottom:4px}.td-auth p{font-size:12px;color:var(--gy)}.tag-topic{background:#FFF1EC;color:var(--p);padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;display:inline-block}.td-date{font-size:13px;color:var(--dk);font-weight:500}.td-stt{font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px}.dot{width:6px;height:6px;border-radius:50%}.d-gr{background:var(--gr)}.d-gray{background:var(--gray)}.d-rd{background:var(--rd)}.c-gr{color:var(--gr)}.c-gray{color:var(--gray)}.c-rd{color:var(--rd)}.td-acts{display:flex;gap:12px;font-size:13px;font-weight:600}.act-btn{cursor:pointer;color:var(--gy);background:none;border:none;font-family:inherit;font-size:13px;font-weight:600}.act-btn:hover{color:var(--p)}.act-del:hover{color:var(--rd)}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;justify-content:center;align-items:center;z-index:1000}.modal-overlay.show{display:flex}.modal-box{background:#FFF;width:900px;max-width:95%;height:90vh;border-radius:12px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(0,0,0,0.1);overflow:hidden}.m-hd{padding:20px 24px;border-bottom:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center}.m-hd h2{font-size:18px;font-weight:700;color:var(--p)}.btn-close{background:none;border:none;font-size:24px;color:var(--gy);cursor:pointer}.m-body{padding:24px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:20px}.m-row{display:flex;gap:16px}.m-fg{display:flex;flex-direction:column;gap:8px;flex:1}.m-fg label{font-size:13px;font-weight:700;color:var(--dk)}.m-input{padding:12px 16px;border:none;background:#F9FAFB;border-radius:6px;font-family:inherit;font-size:14px;outline:none;width:100%}.m-select{width:200px;padding:12px 16px;border:none;background:#F9FAFB;border-radius:6px;font-family:inherit;font-size:14px;font-weight:500;outline:none;cursor:pointer}.editor-box{border:1px solid var(--bd);border-radius:6px;display:flex;flex-direction:column;flex:1;min-height:300px}.editor-tb{background:#F9FAFB;padding:8px 16px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:16px}.tb-sel{padding:6px;border:none;background:#FFF;border-radius:4px;font-family:inherit;font-size:13px;outline:none}.tb-grp{display:flex;gap:8px}.tb-btn{background:none;border:none;font-size:16px;font-weight:700;color:var(--dk);cursor:pointer}.btn-media{background:#FFF;border:1px solid var(--bd);color:var(--p);font-size:12px;font-weight:600;padding:6px 12px;border-radius:4px;cursor:pointer;display:flex;align-items:center;gap:6px}.editor-area{flex:1;padding:16px;border:none;resize:none;font-family:inherit;font-size:14px;outline:none}.m-foot{padding:20px 24px;border-top:1px solid var(--bd);display:flex;justify-content:flex-end;gap:12px}.btn-draft{background:transparent;border:1px solid var(--p);color:var(--p);padding:10px 24px;border-radius:6px;font-weight:600;cursor:pointer}.btn-pub{background:var(--p);border:1px solid var(--p);color:#FFF;padding:10px 24px;border-radius:6px;font-weight:600;cursor:pointer}</style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo-sec">
+            <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+            YMaga
+        </div>
+        <div class="u-info">
+            <div class="u-avt">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="u-det">
+                <span class="u-name" id="admin-display-name">Tên tài khoản</span>
+                <span class="u-mail" id="admin-email">admin@ymaga.vn</span>
+                <span class="u-badge" id="admin-role">Admin</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="post.html" class="nav-it act">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Bài viết
+            </a>
+            <a href="topic.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Chủ đề
+            </a>
+            <a href="comment.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Kiểm duyệt
+            </a>
+            <a href="mod.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Phân quyền
+            </a>
+            <a href="#" id="btn-logout" class="nav-it" style="margin-top: auto; color: #EF4444;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                Đăng xuất
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-lay">
+        <header class="top-bar">
+            <h1 class="top-tit">QUẢN LÝ BÀI VIẾT</h1>
+            <button class="btn-new" id="btn-create-post">Viết bài mới</button>
+        </header>
+
+        <section class="content">
+            <div class="card">
+                <div class="tb-tool">
+                    <div class="search-box">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A7A7A7" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm bài viết">
+                    </div>
+                    <!-- <select class="filter-sel" id="topicFilter">
+                        <option value="all">Tất cả chủ đề</option>
+                    </select>
+                    <select class="filter-sel" id="statusFilter">
+                        <option value="all">Tất cả trạng thái</option>
+                        <option value="published">Đã đăng</option>
+                        <option value="draft">Nháp</option>
+                    </select> -->
+                </div>
+
+                <!-- <div class="sort-bar" id="sortBar">
+                    <span style="color:var(--dk);font-weight:700;">Sắp xếp:</span>
+                    <span class="sort-it act" data-sort="time">Thời gian ↓</span> <span style="color:var(--bd)">|</span>
+                    <span class="sort-it" data-sort="title">Bài viết (A-Z)</span> <span style="color:var(--bd)">|</span>
+                    <span class="sort-it" data-sort="author">Tác giả (A-Z)</span> <span style="color:var(--bd)">|</span>
+                    <span class="sort-it" data-sort="topic">Chủ đề (A-Z)</span> <span style="color:var(--bd)">|</span>
+                    <span class="sort-it" data-sort="status">Trạng thái (A-Z)</span>
+                </div> -->
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bài viết</th>
+                            <th>Tác giả</th>
+                            <th>Chủ đề</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="post-table-body">
+                        <tr><td colspan="6" style="text-align:center; padding:40px; color:var(--gy);">Đang tải dữ liệu...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Tạo / Chỉnh sửa Bài viết (Giữ nguyên như bản trước) -->
+    <div class="modal-overlay" id="postModal">
+        <div class="modal-box">
+            <div class="m-hd">
+                <h2 id="modal-title-text">Tạo bài viết mới</h2>
+                <button class="btn-close" id="btn-close-modal">×</button>
+            </div>
+            <div class="m-body">
+                <input type="hidden" id="post-id">
+                <div class="m-row">
+                    <div class="m-fg" style="flex: 3;">
+                        <label>Tiêu đề</label>
+                        <input type="text" id="post-title" class="m-input" placeholder="Nhập tiêu đề">
+                    </div>
+                    <div class="m-fg" style="flex: 1;">
+                        <label>&nbsp;</label>
+                        <select id="post-topic" class="m-select" style="width: 100%;"></select>
+                    </div>
+                </div>
+                <div class="m-fg">
+                    <label>Mô tả</label>
+                    <input type="text" id="post-desc" class="m-input" placeholder="Nhập mô tả">
+                </div>
+                <div class="m-fg" style="flex: 1; display: flex; flex-direction: column;">
+                    <label>Nội dung</label>
+                    <div class="editor-box">
+                        <div class="editor-tb">
+                            <select class="tb-sel"><option>Cỡ chữ: Normal</option></select>
+                            <div class="tb-grp">
+                                <button class="tb-btn" style="font-family:serif;"><b>B</b></button>
+                                <button class="tb-btn" style="font-family:serif;"><i>I</i></button>
+                                <button class="tb-btn" style="font-family:serif;"><u>U</u></button>
+                            </div>
+                            <button class="btn-media">📷 Chèn tệp</button>
+                        </div>
+                        <textarea id="post-content" class="editor-area" placeholder="Nhập nội dung"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="m-foot">
+                <button class="btn-draft" id="btn-save-draft">Lưu nháp</button>
+                <button class="btn-pub" id="btn-publish">Đăng</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/post.ts"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga Admin - Quản lý Chủ đề</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--p-bg:#FFF1EC;--bg:#F4F6F8;--dk:#10100E;--gy:#8C92A4;--bd:#EAEAEA;--rd:#EF4444;--gr:#10B981;--gray:#9CA3AF;--sd-w:260px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--dk);display:flex;height:100vh;overflow:hidden}a{text-decoration:none;color:inherit}.sidebar{width:var(--sd-w);background:#FFF;border-right:1px solid var(--bd);display:flex;flex-direction:column;flex-shrink:0}.logo-sec{padding:24px 32px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px}.logo-mark{position:relative;width:24px;height:24px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:5px;height:24px;top:0}.r1{left:19px}.r2{left:0}.r3{width:5px;height:12px;left:9.5px;top:0}.r4,.r5{width:9px;height:7px;top:17px}.r4{left:0}.r5{left:15px}.u-info{padding:0 32px 24px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:12px}.u-avt{width:40px;height:40px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF}.u-det{display:flex;flex-direction:column;gap:2px}.u-name{font-size:13px;font-weight:600;color:var(--p)}.u-mail{font-size:11px;color:var(--gy);margin-bottom:2px}.u-badge{background:#F4A281;color:#FFF;font-size:10px;font-weight:600;padding:2px 10px;border-radius:4px;width:fit-content}.nav-menu{padding:24px 16px;display:flex;flex-direction:column;gap:4px;flex:1}.nav-it{padding:14px 16px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--gy);border-radius:8px;cursor:pointer;transition:.2s}.nav-it:hover{background:#FAFAFA;color:var(--dk)}.nav-it.act{background:var(--p-bg);color:var(--p)}.main-lay{flex:1;display:flex;flex-direction:column;overflow:hidden}.top-bar{background:#FFF;padding:24px 40px;border-bottom:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center}.top-tit{font-size:22px;font-weight:700;color:var(--p);text-transform:uppercase}.btn-new{background:var(--p);color:#FFF;border:none;padding:12px 20px;border-radius:6px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.2s}.btn-new:hover{opacity:.9}.content{padding:40px;overflow-y:auto;flex:1}.tb-tool{display:flex;gap:16px;margin-bottom:24px}.search-box{flex:1;display:flex;background:#FFF;border-radius:6px;padding:12px 16px;align-items:center;gap:10px;border:1px solid var(--bd)}.search-box input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.grid-topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}.t-crd{background:#FFF;border:1px solid var(--bd);border-radius:12px;padding:20px;cursor:pointer;display:flex;gap:16px;transition:.2s;box-shadow:0 2px 8px rgba(0,0,0,0.02);align-items:center}.t-crd:hover{border-color:var(--p);box-shadow:0 4px 12px rgba(0,0,0,0.08);transform:translateY(-2px)}.tc-ic{width:64px;height:64px;border-radius:8px;object-fit:cover;background:#E5F6FF;color:#0095FF;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:bold;flex-shrink:0}.tc-in{flex:1;min-width:0}.tc-in h4{font-size:16px;font-weight:700;color:var(--dk);margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tc-in span{font-size:12px;color:var(--gy);margin-bottom:8px;display:block}.tc-in p{font-size:13px;color:var(--dk);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);display:none;justify-content:center;align-items:center;z-index:1000;opacity:0;transition:.2s}.modal-overlay.show{display:flex;opacity:1}.modal-box{background:#FFF;width:700px;max-width:95vw;max-height:90vh;border-radius:12px;display:flex;flex-direction:column;box-shadow:0 10px 40px rgba(0,0,0,0.2);transform:translateY(-20px);transition:.3s;overflow:hidden}.modal-overlay.show .modal-box{transform:translateY(0)}.m-hd{padding:20px 24px;border-bottom:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center;background:#FAFAFA}.m-hd h2{font-size:18px;font-weight:700;color:var(--p);text-transform:uppercase}.btn-close{background:none;border:none;font-size:24px;color:var(--gy);cursor:pointer;line-height:1}.tabs{display:flex;border-bottom:1px solid var(--bd);background:#FFF}.tab-btn{flex:1;padding:14px;background:none;border:none;border-bottom:2px solid transparent;font-family:inherit;font-size:14px;font-weight:600;color:var(--gy);cursor:pointer;transition:.2s}.tab-btn.act{color:var(--p);border-bottom-color:var(--p);background:#FFF1EC}.m-body{padding:24px;overflow-y:auto;flex:1}.tab-content{display:none;flex-direction:column;gap:16px}.tab-content.act{display:flex}.tf-fg{display:flex;flex-direction:column;gap:8px}.tf-fg label{font-size:13px;font-weight:600;color:var(--dk)}.tf-fg input,.tf-fg textarea{padding:12px 16px;border:1px solid var(--bd);border-radius:8px;font-family:inherit;font-size:14px;outline:none;background:#F9FAFB;transition:.2s}.tf-fg input:focus,.tf-fg textarea:focus{border-color:var(--p);background:#FFF}.img-prev{width:100%;height:160px;border-radius:8px;object-fit:cover;border:1px dashed var(--bd);display:none}.m-foot{padding:20px 24px;border-top:1px solid var(--bd);display:flex;justify-content:flex-end;gap:12px;background:#FAFAFA}.tf-btn{padding:10px 24px;border-radius:6px;font-family:inherit;font-weight:600;cursor:pointer;border:none;font-size:14px;transition:.2s}.btn-canc{background:#E4E4E4;color:var(--dk)}.btn-save{background:var(--p);color:#FFF}.btn-del{background:transparent;border:1px solid var(--rd);color:var(--rd)}.link-it{display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--bd);border-radius:8px;background:#FAFAFA}.link-it-in{display:flex;flex-direction:column;gap:4px;overflow:hidden}.link-it-in b{font-size:14px;color:var(--dk)}.link-it-in a{font-size:12px;color:var(--p);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.link-acts{display:flex;gap:8px}.link-btn{background:none;border:none;cursor:pointer;font-size:13px;font-weight:600;color:var(--gy)}.link-btn.ed:hover{color:var(--gr)}.link-btn.rm:hover{color:var(--rd)}.post-it{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid var(--bd)}.post-it:last-child{border-bottom:none}.post-in h4{font-size:14px;color:var(--dk);margin-bottom:4px}.post-in span{font-size:12px;color:var(--gy)}</style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo-sec">
+            <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+            YMaga
+        </div>
+        <div class="u-info">
+            <div class="u-avt">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="u-det">
+                <span class="u-name" id="admin-display-name">Admin</span>
+                <span class="u-mail" id="admin-role-text">Quản trị viên</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="post.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Bài viết
+            </a>
+            <a href="topic.html" class="nav-it act">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Chủ đề
+            </a>
+            <a href="comment.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Kiểm duyệt
+            </a>
+            <a href="mod.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Phân quyền
+            </a>
+            <a href="#" id="btn-logout" class="nav-it" style="margin-top:auto; color:#EF4444;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                Đăng xuất
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-lay">
+        <header class="top-bar">
+            <h1 class="top-tit">QUẢN LÝ CHỦ ĐỀ</h1>
+            <button class="btn-new" id="btn-create-topic">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Tạo Chủ đề mới
+            </button>
+        </header>
+
+        <section class="content">
+            <div class="tb-tool">
+                <div class="search-box">
+                    <span>🔍</span>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm chủ đề...">
+                </div>
+            </div>
+
+            <div class="grid-topics" id="topic-list-container">
+                <div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--gy);">Đang tải dữ liệu...</div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal-overlay" id="topic-modal">
+        <div class="modal-box">
+            <div class="m-hd">
+                <h2 id="modal-title">Cập nhật Chủ đề</h2>
+                <button class="btn-close" id="btn-close-modal">×</button>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn act" data-target="tab-info">Thông tin chung</button>
+                <button class="tab-btn" data-target="tab-links" id="tab-links-btn">Liên kết ngoài</button>
+                <button class="tab-btn" data-target="tab-posts" id="tab-posts-btn">Bài viết</button>
+            </div>
+
+            <div class="m-body">
+                <div class="tab-content act" id="tab-info">
+                    <div class="tf-fg">
+                        <label>Tên chủ đề</label>
+                        <input type="text" id="topic-name" placeholder="Ví dụ: Thể thao">
+                    </div>
+                    <div class="tf-fg">
+                        <label>Banner (Cover URL)</label>
+                        <input type="text" id="topic-cover" placeholder="Link ảnh https://...">
+                        <img id="topic-cover-preview" class="img-prev" src="">
+                    </div>
+                    <div class="tf-fg">
+                        <label>Mô tả chi tiết</label>
+                        <textarea id="topic-desc" rows="5" placeholder="Mô tả nội dung chủ đề..."></textarea>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-links">
+                    <div style="background:#F9FAFB; padding:16px; border-radius:8px; border:1px solid var(--bd); display:flex; flex-direction:column; gap:8px;">
+                        <label style="font-size:13px; font-weight:700;">Thêm / Sửa Liên kết</label>
+                        <div style="display:flex; gap:8px;">
+                            <input type="text" id="link-title" placeholder="Tiêu đề link" style="flex:1; padding:8px 12px; border:1px solid var(--bd); border-radius:6px; outline:none; font-family:inherit;">
+                            <input type="text" id="link-url" placeholder="https://..." style="flex:2; padding:8px 12px; border:1px solid var(--bd); border-radius:6px; outline:none; font-family:inherit;">
+                            <button id="btn-save-link" style="padding:8px 16px; background:var(--dk); color:#FFF; border:none; border-radius:6px; font-weight:600; cursor:pointer;">Lưu Link</button>
+                        </div>
+                    </div>
+                    <div id="links-list-container" style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+                        </div>
+                </div>
+
+                <div class="tab-content" id="tab-posts">
+                    <div id="posts-list-container" style="display:flex; flex-direction:column;">
+                        </div>
+                </div>
+            </div>
+
+            <div class="m-foot">
+                <button class="tf-btn btn-del" id="btn-del-topic" style="margin-right:auto;">Xóa Chủ đề</button>
+                <button class="tf-btn btn-canc" id="btn-cancel-modal">Hủy</button>
+                <button class="tf-btn btn-save" id="btn-save-topic">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/topic.ts"></script>
+</body>
+</html>

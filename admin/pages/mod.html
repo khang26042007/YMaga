@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMaga Admin - Phân quyền</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root{--p:#DB754D;--p-bg:#FFF1EC;--bg:#F4F6F8;--dk:#10100E;--gy:#8C92A4;--bd:#EAEAEA;--ad-bg:#F3E8FF;--ad-c:#8B5CF6;--md-bg:#D1FAE5;--md-c:#10B981;--bl:#3B82F6;--sd-w:260px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--dk);display:flex;height:100vh;overflow:hidden}a{text-decoration:none;color:inherit}.sidebar{width:var(--sd-w);background:#FFF;border-right:1px solid var(--bd);display:flex;flex-direction:column;flex-shrink:0}.logo-sec{padding:24px 32px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px}.logo-mark{position:relative;width:24px;height:24px}.rect{position:absolute;background:var(--p)}.r1,.r2{width:5px;height:24px;top:0}.r1{left:19px}.r2{left:0}.r3{width:5px;height:12px;left:9.5px;top:0}.r4,.r5{width:9px;height:7px;top:17px}.r4{left:0}.r5{left:15px}.u-info{padding:0 32px 24px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:12px}.u-avt{width:40px;height:40px;background:var(--dk);border-radius:50%;display:flex;justify-content:center;align-items:center;color:#FFF}.u-det{display:flex;flex-direction:column;gap:2px}.u-name{font-size:13px;font-weight:600;color:var(--p)}.u-mail{font-size:11px;color:var(--gy);margin-bottom:2px}.u-badge{background:#F4A281;color:#FFF;font-size:10px;font-weight:600;padding:2px 10px;border-radius:4px;width:fit-content}.nav-menu{padding:24px 16px;display:flex;flex-direction:column;gap:4px;flex:1}.nav-it{padding:14px 16px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--gy);border-radius:8px;cursor:pointer;transition:.2s}.nav-it:hover{background:#FAFAFA;color:var(--dk)}.nav-it.act{background:var(--p-bg);color:var(--p)}.main-lay{flex:1;display:flex;flex-direction:column;overflow:hidden}.top-bar{background:#FFF;padding:24px 40px;border-bottom:1px solid var(--bd)}.top-tit{font-size:22px;font-weight:700;color:var(--p);text-transform:uppercase}.content{padding:40px;overflow-y:auto;flex:1}.card{background:#FFF;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.02);padding:32px}.tb-tool{display:flex;gap:16px;margin-bottom:24px}.search-box{flex:1;display:flex;background:#F9FAFB;border-radius:6px;padding:12px 16px;align-items:center;gap:10px}.search-box input{border:none;background:transparent;outline:none;font-family:inherit;font-size:14px;width:100%;color:var(--dk)}.search-box input::placeholder{color:var(--gy)}.filter-sel{padding:12px 16px;border:none;border-radius:6px;font-family:inherit;font-size:14px;font-weight:500;outline:none;background:#F9FAFB;color:var(--dk);cursor:pointer;min-width:160px}.tb-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.tb-hd h2{font-size:16px;font-weight:700;text-transform:uppercase;color:var(--dk)}.btn-add{background:var(--p);color:#FFF;border:none;padding:12px 20px;border-radius:6px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;transition:.2s}.btn-add:hover{opacity:.9}table{width:100%;border-collapse:collapse}th{text-align:left;padding:16px;font-size:13px;color:var(--gy);font-weight:600;background:#F9FAFB;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}td{padding:20px 16px;border-bottom:1px solid var(--bd);vertical-align:middle}.td-user{display:flex;align-items:center;gap:16px}.td-avt{width:40px;height:40px;border-radius:50%;background:var(--dk);color:#FFF;display:flex;justify-content:center;align-items:center}.td-in h4{font-size:14px;font-weight:600;color:var(--dk);margin-bottom:2px}.td-in p{font-size:12px;color:var(--gy)}.td-mail{font-size:13px;color:var(--gy)}.badge{padding:6px 16px;border-radius:6px;font-size:12px;font-weight:600;display:inline-block}.bdg-ad{background:var(--ad-bg);color:var(--ad-c)}.bdg-md{background:var(--md-bg);color:var(--md-c)}.role-sel-wrap{position:relative;display:inline-block}.role-sel{appearance:none;border:none;background:transparent;color:var(--bl);font-family:inherit;font-size:14px;font-weight:500;cursor:pointer;outline:none;padding-right:16px}.role-sel-wrap::after{content:'˅';position:absolute;right:0;top:50%;transform:translateY(-50%) scale(1.2,0.8);color:var(--bl);pointer-events:none;font-size:12px}.role-sel option{color:var(--dk)}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;justify-content:center;align-items:center;z-index:1000}.modal-overlay.show{display:flex}.modal-box{background:#FFF;width:400px;border-radius:12px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,0.1)}.m-hd{font-size:18px;font-weight:700;margin-bottom:20px}.m-fg{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}.m-fg label{font-size:13px;font-weight:600}.m-fg input,.m-fg select{padding:12px;border:1px solid var(--bd);border-radius:6px;font-family:inherit;font-size:14px;outline:none;background:#F9FAFB}.m-fg input:focus,.m-fg select:focus{border-color:var(--p);background:#FFF}.m-act{display:flex;gap:12px;margin-top:24px}.m-btn{flex:1;padding:12px;border-radius:6px;font-weight:600;cursor:pointer;border:none}.btn-canc{background:#F4F6F8;color:var(--dk)}.btn-save{background:var(--p);color:#FFF}.err-msg{color:#EF4444;font-size:12px;font-weight:500;margin-bottom:12px;display:none}</style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo-sec">
+            <div class="logo-mark"><div class="rect r2"></div><div class="rect r3"></div><div class="rect r1"></div><div class="rect r4"></div><div class="rect r5"></div></div>
+            YMaga
+        </div>
+        <div class="u-info">
+            <div class="u-avt">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="u-det">
+                <span class="u-name" id="admin-display-name">Tên tài khoản</span>
+                <span class="u-mail" id="admin-email">admin@modernreader.vn</span>
+                <span class="u-badge" id="admin-role">Admin</span>
+            </div>
+        </div>
+        <!-- Thêm flex: 1 vào nav-menu để đẩy phần tử có margin-top: auto xuống cuối -->
+        <nav class="nav-menu">
+            <a href="post.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Bài viết
+            </a>
+            <a href="topic.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Chủ đề
+            </a>
+            <a href="comment.html" class="nav-it">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Kiểm duyệt
+            </a>
+            <a href="mod.html" class="nav-it act">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Phân quyền
+            </a>
+
+            <!-- Nút đăng xuất được đẩy xuống đáy nhờ margin-top: auto -->
+            <a href="#" id="btn-logout" class="nav-it" style="margin-top: auto; color: #EF4444;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                Đăng xuất
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-lay">
+        <header class="top-bar">
+            <h1 class="top-tit">PHÂN QUYỀN</h1>
+        </header>
+
+        <section class="content">
+            <div class="card">
+                <div class="tb-tool">
+                    <div class="search-box">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A7A7A7" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm thành viên">
+                    </div>
+                    <select class="filter-sel" id="roleFilter">
+                        <option value="all">Tất cả vai trò</option>
+                        <option value="admin">Admin</option>
+                        <option value="mod">Moderator</option>
+                    </select>
+                </div>
+
+                <div class="tb-hd">
+                    <h2>QUẢN LÝ PHÂN QUYỀN</h2>
+                    <button class="btn-add" id="btn-open-modal">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Thêm thành viên
+                    </button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tài khoản</th>
+                            <th>Email</th>
+                            <th>Vai trò</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-table-body">
+                        <tr><td colspan="4" style="text-align:center; padding:40px; color:var(--gy);">Đang tải dữ liệu...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Thêm thành viên -->
+    <div class="modal-overlay" id="add-modal">
+        <div class="modal-box">
+            <div class="m-hd">Thêm thành viên</div>
+            <form id="add-user-form">
+                <div class="m-fg">
+                    <label>Tên hiển thị (Tên tác giả)</label>
+                    <input type="text" id="add-name" required placeholder="Nhập tên hiển thị">
+                </div>
+                <div class="m-fg">
+                    <label>Tên đăng nhập (Username)</label>
+                    <input type="text" id="add-username" required placeholder="Ví dụ: tentacgia">
+                </div>
+                <div class="m-fg">
+                    <label>Mật khẩu</label>
+                    <input type="password" id="add-password" required placeholder="Tối thiểu 8 ký tự">
+                </div>
+                <div class="m-fg">
+                    <label>Vai trò</label>
+                    <select id="add-role" required>
+                        <option value="mod">Moderator</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="err-msg" id="add-err-msg"></div>
+                <div class="m-act">
+                    <button type="button" class="m-btn btn-canc" id="btn-close-modal">Hủy</button>
+                    <button type="submit" class="m-btn btn-save" id="btn-submit-add">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script Mock Auth & Logic Render Giao Diện -->
+    <script type="module" src="../scripts/auth.ts"></script>
+    <script type="module" src="../scripts/mod.ts"></script>
+</body>
+</html>
